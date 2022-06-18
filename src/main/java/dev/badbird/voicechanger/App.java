@@ -12,6 +12,7 @@ public class App {
 
         System.out.println("Start recording ....");
         voiceCapture.start();
+        VoiceChanger voiceChanger = new VoiceChanger(voiceCapture);
         Thread.sleep(20000);
         voiceCapture.stop();
 
